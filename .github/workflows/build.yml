@@ -12,7 +12,7 @@ jobs:
     - uses: seanyen/setup-ros@seanyen/windows
       with:
         required-ros-distributions: melodic
-    - uses: ros-tooling/action-ros-ci@0.0.13
+    - uses: ros-tooling/action-ros-ci@master
       with:
-        package-name: ros1_rosbag_storage_vendor rosbag2_bag_v2_plugins
+        package-name: rospy_azure_iothub
         source-ros-binary-installation: melodic
