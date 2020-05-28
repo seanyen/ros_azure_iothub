@@ -35,7 +35,7 @@ install_isolated\setup.bat
 
 # How to Build (Ubuntu Linux Melodic install)
 Here is an example how to build it for Ubuntu Linux Melodic install.
-```
+```Bash
 $ # source ROS environment
 $ source /opt/ros/melodic/setup.bash
 
