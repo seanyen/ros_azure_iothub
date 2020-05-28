@@ -40,7 +40,7 @@ $ # source ROS environment
 $ source /opt/ros/melodic/setup.bash
 
 $ # create catkin workspace folders
-$ mkdir catkin_ws\src -p
+$ mkdir catkin_ws/src -p
 $ pushd catkin_ws
 $ catkin_init_workspace src
 
@@ -49,9 +49,12 @@ $ pushd src
 $ git clone --recursive https://github.com/Microsoft/ros_azure_iothub
 $ popd
 
+$ # update apt to refresh package registries
+$ sudo apt update
+
 $ # install system dependencies
-$ sudo rosdep update
-$ sudo rosdep install --from-paths src --ignore-src -r -y
+$ rosdep update
+$ rosdep install --from-paths src --ignore-src -r -y
 
 $ # install Azure IoT SDK as Debian
 $ sudo add-apt-repository ppa:aziotsdklinux/ppa-azureiot
